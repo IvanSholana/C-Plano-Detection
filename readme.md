@@ -1,12 +1,4 @@
-Here’s the English version of the README tailored for your GitHub portfolio based on the document you provided:
-
----
-
 # Plano Detection and Classification
-
-**Date**: March 21, 2025  
-**Created by**: [Your Name/Your Team]  
-**Organization**: [Your Organization, if applicable]  
 
 ## Project Description
 This project is a computer vision-based plano detection and classification system designed to automatically count votes from ballot papers. It leverages YOLO (You Only Look Once) models to detect number boxes and black dots on ballot papers, then classifies the results into votes for three candidate pairs (paslon). The system includes image processing, data augmentation, and statistical calculations to evaluate prediction accuracy.
@@ -34,19 +26,6 @@ This project is a computer vision-based plano detection and classification syste
   - `final_model.pt`: Detects black dots
   - `dot_boxes_detection.pt`: Detects dot boxes comprehensively
 
-## Code Structure
-1. **Model Definition** (`0.2`): Loads pre-trained YOLO models.
-2. **Image Augmentation** (`0.3`): Creates image variations to improve model robustness.
-3. **Image Rotation** (`0.4`): Rotates images if detected upside-down.
-4. **Number Detection** (`0.5`):
-   - Retrieves number boxes (`0.5.1`)
-   - Classifies numbers from boxes (`0.5.2`)
-5. **Dot Detection** (`0.6`):
-   - Crops dot boxes (`0.6.1`)
-   - Counts votes from dots (`0.6.2`)
-   - Determines split count for dot boxes (`0.6.3`)
-6. **Main Program** (`0.7`): Integrates all functions to process the dataset and generate vote predictions.
-
 ## How to Run
 ### Prerequisites
 - Python 3.8 or higher
@@ -58,8 +37,7 @@ This project is a computer vision-based plano detection and classification syste
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/[username]/[repository-name].git
-   cd [repository-name]
+   git clone https://github.com/IvanSholana/C-Plano-Detection.git
    ```
 2. **Prepare the Dataset**:
    - Place ballot images in the `./dataset/Test/` folder.
@@ -98,15 +76,3 @@ TPS_700.jpg: [62, 6, 0, 101, 1, 31, 3]
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-For questions or suggestions, reach out to me at [your email] or open an [issue](https://github.com/[username]/[repository-name]/issues) in this repository.
-
----
-
-**Notes**: 
-- Replace `[username]`, `[repository-name]`, `[Your Name/Your Team]`, and `[your email]` with your own information.
-- Adjust the "How to Run" section if you have a specific main file (e.g., `main.py`).
-- Add a `LICENSE` file to your repository if you wish to include a license.
-
-I hope this README enhances your GitHub portfolio! Let me know if you need any adjustments or additions.
